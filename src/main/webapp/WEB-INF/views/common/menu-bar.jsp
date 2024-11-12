@@ -42,7 +42,7 @@
       </a>
     </div>
     <div class="col">
-      <a href="approval/list" class="nav-link">
+      <a href="/approval/list" class="nav-link">
         <i class="bi bi-file-earmark-text" style="font-size: 30px;"></i><br/>
         결재
       </a>
@@ -54,7 +54,7 @@
       </a>
     </div>
     <div class="col">
-      <a href="main" class="nav-link">
+      <a href="/mypage/main" class="nav-link">
         <i class="bi bi-person-circle" style="font-size: 30px;"></i><br/>
         사원정보
       </a>

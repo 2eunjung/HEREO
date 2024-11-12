@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="site/hereo/employee/vo/Employee.java">
+
+  <!-- void registerEmployee(Employee employee); -->
+  <insert id="registerEmployee">
+    insert into employees
+        (
+         employee_no
+        , employee_name
+        , employee_id
+        , employee_password
+        , address_post
+        , address
+        , address_detail
+        , employee_tel
+        , employee_email
+        , hire_date
+        , department_no
+        , position
+        , bank
+        , account
+        )
+    values
+        (
+         emp_no_seq.nextval
+          , #{emp.name}
+          , 아이디값(이름+주민번호 앞자리)
+          , 'hereo'
+          , #{emp.address.post}
+          , #{emp.address.address}
+          , #{emp.address.detail}
+          , #{emp.tel}
+          , #{emp.email}
+          , #{emp.hireDate}
+          , #{emp.department.no}
+          , #{emp.position}
+          , #{emp.bank}
+          , #{account}
+        )
+  </insert>
+</mapper>
